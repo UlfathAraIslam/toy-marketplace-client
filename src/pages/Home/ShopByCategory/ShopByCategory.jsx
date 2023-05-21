@@ -1,4 +1,6 @@
 
+
+
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -27,19 +29,19 @@ const ShopByCategory = () => {
                     className={`px-4 py-2 rounded-tl-lg rounded-tr-lg ${activeTab === 1 ? ' bg-purple-300  text-white' : 'bg-gray-200'}`}
                     onClick={() => handleTabChange(1)}
                 >
-                    Language Toys
+                    Construction
                 </button>
                 <button
                     className={`px-4 py-2 ${activeTab === 2 ? ' bg-purple-300  text-white' : 'bg-gray-200'}`}
                     onClick={() => handleTabChange(2)}
                 >
-                    Math Toys
+                    Language
                 </button>
                 <button
                     className={`px-4 py-2 rounded-tl-lg rounded-tr-lg ${activeTab === 3 ? ' bg-purple-300  text-white' : 'bg-gray-200'}`}
                     onClick={() => handleTabChange(3)}
                 >
-                    Science Toys
+                    Science
                 </button>
             </div>
             <div className="mt-4">
@@ -55,7 +57,7 @@ const ShopByCategory = () => {
                                             <p>Price: {toy.price}</p>
                                             <p>Rating: {toy.rating}</p>
                                             <div className="card-actions justify-end">
-                                                <Link to='/toy'><button className="btn btn-outline bg-purple-200">View Details</button></Link>
+                                                <Link to='/toy/:id'><button className="btn btn-outline bg-purple-200">View Details</button></Link>
                                             </div>
                                         </div>
                                     </div>
@@ -72,7 +74,7 @@ const ShopByCategory = () => {
                                             <p>Price: {toy.price}</p>
                                             <p>Rating: {toy.rating}</p>
                                             <div className="card-actions justify-end">
-                                                <button className="btn btn-outline bg-purple-200">View Details</button>
+                                            <Link to='/toy/:id'><button className="btn btn-outline bg-purple-200">View Details</button></Link>
                                             </div>
                                         </div>
                                     </div>
@@ -89,7 +91,7 @@ const ShopByCategory = () => {
                                             <p>Price: {toy.price}</p>
                                             <p>Rating: {toy.rating}</p>
                                             <div className="card-actions justify-end">
-                                                <button className="btn btn-outline bg-purple-200">View Details</button>
+                                            <Link to='/toy/:id'><button className="btn btn-outline bg-purple-200">View Details</button></Link>
                                             </div>
                                         </div>
                                     </div>
@@ -104,4 +106,5 @@ const ShopByCategory = () => {
 };
 
 export default ShopByCategory;
+
 
