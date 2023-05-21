@@ -78,6 +78,7 @@ const Navbar = () => {
             {navItems}
           </ul>
         </div>
+        <img className='w-10 rounded' src="https://thumbs.dreamstime.com/b/back-rear-view-successful-business-man-sitting-office-chair-point-finger-success-word-doodle-back-rear-view-successful-111836943.jpg" alt="Logo" />
         {user && <img className='w-10 rounded' src={photoUrl} alt={name} />}
       </div>
       <div className='navbar-center hidden lg:flex'>
