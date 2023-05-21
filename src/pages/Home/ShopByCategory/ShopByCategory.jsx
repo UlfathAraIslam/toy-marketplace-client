@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const ShopByCategory = () => {
     const [activeTab, setActiveTab] = useState(1);
@@ -54,7 +55,7 @@ const ShopByCategory = () => {
                                             <p>Price: {toy.price}</p>
                                             <p>Rating: {toy.rating}</p>
                                             <div className="card-actions justify-end">
-                                                <button className="btn btn-outline bg-purple-200">View Details</button>
+                                                <Link to='/toy'><button className="btn btn-outline bg-purple-200">View Details</button></Link>
                                             </div>
                                         </div>
                                     </div>
