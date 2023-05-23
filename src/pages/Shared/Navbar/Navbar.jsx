@@ -26,7 +26,7 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-        <Link to='/add-toy'>
+        <Link to='/add-toy/:id'>
           <a>Add a toy</a>
         </Link>
       </li>
