@@ -42,11 +42,21 @@ const ShopByCategory = () => {
                 </button>
             </div>
             <div className="mt-4">
-                {toys.length > 0 && (
+                
+            </div>
+        </div>
+    );
+};
+
+export default ShopByCategory;
+
+
+/* 
+{toys.length > 0 && (
                     <>
                         {activeTab === 1 && (
                             <div className="flex justify-center flex-col sm:flex-row gap-4">
-                                {toys[0].subcategory.map((toy, index) => (
+                                
                                     <div className="card card-side bg-base-100 shadow-xl" key={index}>
                                         <figure><img src={toy.image} alt="Toy" /></figure>
                                         <div className="card-body">
@@ -58,7 +68,7 @@ const ShopByCategory = () => {
                                             </div>
                                         </div>
                                     </div>
-                                ))}
+                                
                             </div>
                         )}
                         {activeTab === 2 && (
@@ -97,11 +107,4 @@ const ShopByCategory = () => {
                         )}
                     </>
                 )}
-            </div>
-        </div>
-    );
-};
-
-export default ShopByCategory;
-
-
+*/

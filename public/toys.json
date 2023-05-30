@@ -1,0 +1,80 @@
+[
+    {
+      "toy_name": "Build & Learn Coding Robot",
+      "image": "https://media.istockphoto.com/id/185241796/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E3%83%93%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF-abc.jpg?s=612x612&w=is&k=20&c=T1KZbxcsjqQJY9GtnodpaDkfgAyC7jfc6V17W-T6hQ4=",
+      "price": 29.99,
+      "rating": 4.5,
+      "seller": {
+        "name": "ABC Toy Store",
+        "email": "abc@example.com"
+      },
+      "category": "STEM",
+      "available_quantity": 10,
+      "description": "The Build & Learn Coding Robot is a fun and educational toy that introduces children to the basics of coding. It comes with a set of programmable blocks and a remote control. Kids can learn to code by arranging the blocks in different sequences to make the robot perform various actions. The toy encourages problem-solving skills and logical thinking."
+    },
+    {
+      "toy_name": "Science Lab Kit",
+      "image": "https://images.pexels.com/photos/8612921/pexels-photo-8612921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "price": 39.99,
+      "rating": 4.2,
+      "seller": {
+        "name": "XYZ Educational Toys",
+        "email": "xyz@example.com"
+      },
+      "category": "Science",
+      "available_quantity": 5,
+      "description": "The Science Lab Kit is a comprehensive set that allows kids to conduct various science experiments at home. It includes a range of materials and tools needed for hands-on learning, such as test tubes, chemicals, magnifying glass, and a guidebook. With this kit, children can explore different scientific concepts and develop a passion for science."
+    },
+    {
+      "toy_name": "Math Puzzle Set",
+      "image": "https://images.pexels.com/photos/8612921/pexels-photo-8612921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "price": 19.99,
+      "rating": 4.8,
+      "seller": {
+        "name": "123 Toy Emporium",
+        "email": "123@example.com"
+      },
+      "category": "Mathematics",
+      "available_quantity": 8,
+      "description": "The Math Puzzle Set is a collection of interactive puzzles and games that make learning math enjoyable for children. It includes puzzles, number cards, and manipulative objects to teach various mathematical concepts such as addition, subtraction, multiplication, and division. The set promotes critical thinking and numeracy skills in a fun and engaging way."
+    },
+    {
+      "toy_name": "Build & Learn Coding Robot",
+      "image": "https://example.com/toy1.jpg",
+      "price": 29.99,
+      "rating": 4.5,
+      "seller": {
+        "name": "ABC Toy Store",
+        "email": "abc@example.com"
+      },
+      "category": "STEM",
+      "available_quantity": 10,
+      "description": "The Build & Learn Coding Robot is a fun and educational toy that introduces children to the basics of coding. It comes with a set of programmable blocks and a remote control. Kids can learn to code by arranging the blocks in different sequences to make the robot perform various actions. The toy encourages problem-solving skills and logical thinking."
+    },
+    {
+      "toy_name": "Science Lab Kit",
+      "image": "https://example.com/toy2.jpg",
+      "price": 39.99,
+      "rating": 4.2,
+      "seller": {
+        "name": "XYZ Educational Toys",
+        "email": "xyz@example.com"
+      },
+      "category": "Science",
+      "available_quantity": 5,
+      "description": "The Science Lab Kit is a comprehensive set that allows kids to conduct various science experiments at home. It includes a range of materials and tools needed for hands-on learning, such as test tubes, chemicals, magnifying glass, and a guidebook. With this kit, children can explore different scientific concepts and develop a passion for science."
+    },
+    {
+      "toy_name": "Math Puzzle Set",
+      "image": "https://example.com/toy3.jpg",
+      "price": 19.99,
+      "rating": 4.8,
+      "seller": {
+        "name": "123 Toy Emporium",
+        "email": "123@example.com"
+      },
+      "category": "Mathematics",
+      "available_quantity": 8,
+      "description": "The Math Puzzle Set is a collection of interactive puzzles and games that make learning math enjoyable for children. It includes puzzles, number cards, and manipulative objects to teach various mathematical concepts such as addition, subtraction, multiplication, and division. The set promotes critical thinking and numeracy skills in a fun and engaging way."
+    }
+  ]

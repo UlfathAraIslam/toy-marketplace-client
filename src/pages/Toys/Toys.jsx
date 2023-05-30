@@ -25,24 +25,7 @@ const Toys = () => {
           </tr>
         </thead>
         <tbody>
-          {toys.map((toy) => (
-            <tr key={toy._id}>
-              <td className="py-2 px-4 border-b">{toy.subcategory[0].seller}</td>
-              <td className="py-2 px-4 border-b">{toy.subcategory[0].name}</td>
-              <td className="py-2 px-4 border-b">
-                {toy.subcategory.map((subcategory) => (
-                  <span key={subcategory.name}>{subcategory.name}, </span>
-                ))}
-              </td>
-              <td className="py-2 px-4 border-b">{toy.subcategory[0].price}</td>
-              <td className="py-2 px-4 border-b">{toy.available_quantity}</td>
-              <td className="py-2 px-4 border-b">
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                  View Details
-                </button>
-              </td>
-            </tr>
-          ))}
+          
         </tbody>
       </table>
     </div>

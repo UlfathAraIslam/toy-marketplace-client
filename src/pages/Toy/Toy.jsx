@@ -1,20 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useLoaderData, useParams } from 'react-router-dom';
 
 const Toy = () => {
-  const { id } = useParams();
-  const [toy, setToy] = useState(null);
+  const toy = useLoaderData();
 
-  useEffect(() => {
-    fetch(`http://localhost:5000/toys/${id}`)
-      .then(res => res.json())
-      .then(data => setToy(data))
-      .catch(error => console.error(error));
-  }, [id]);
+  // const { id } = useParams();
+  // const [toy, setToy] = useState(null);
 
-  if (!toy) {
-    return <div>Loading...</div>;
-  }
+  // useEffect(() => {
+  //   fetch(`http://localhost:5000/toys/${id}`)
+  //     .then(res => res.json())
+  //     .then(data => setToy(data))
+  //     .catch(error => console.error(error));
+  // }, [id]);
+
+  // if (!toy) {
+  //   return <div>Loading...</div>;
+  // }
 
   const { picture, subcategory, available_quantity, detail_description } = toy;
 
