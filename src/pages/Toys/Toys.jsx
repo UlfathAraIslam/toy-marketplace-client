@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Toys = () => {
   const [toys, setToys] = useState([]);
 
+  console.log(toys);
   useEffect(() => {
     fetch('http://localhost:5000/toys')
       .then((res) => res.json())
       .then((data) => setToys(data));
   }, []);
+
+  // const {_id} = toy;
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -26,13 +30,14 @@ const Toys = () => {
         </thead>
         <tbody>
           {toys.map((toy) => (
-            <tr key={toy.id}>
+            <tr key={toy._id}>
               <td className="py-2 px-4 border-b">{toy.seller.name}</td>
               <td className="py-2 px-4 border-b">{toy.toy_name}</td>
               <td className="py-2 px-4 border-b">{toy.category}</td>
               <td className="py-2 px-4 border-b">{toy.price}</td>
               <td className="py-2 px-4 border-b">{toy.available_quantity}</td>
-              <td className="py-2 px-4 border-b"></td>
+              <td className="py-2 px-4 border-b"><Link to={`/toy/${toy._id}`}><button className='bg-purple-200 rounded'>View Details</button></Link></td>
+              {/* <td className="py-2 px-4 border-b"><Link to={`/toy/:id`}><button className='bg-purple-200 rounded'>View Details</button></Link></td> */}
             </tr>
           ))}
         </tbody>

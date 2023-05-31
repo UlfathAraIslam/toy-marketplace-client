@@ -5,33 +5,28 @@ import { AuthContext } from '../../providers/AuthProvider';
 const AddAToy = () => {
   const toy = useLoaderData();
 
+  // const {_id, toy_name} = toy;
+
   const {user} = useContext(AuthContext);
-
-  // const [toys, setToys] = useState([]);
-
-  // useEffect(() => {
-  //   fetch('http://localhost:5000/toys/')
-  //     .then((res) => res.json())
-  //     .then((data) => console.log(data));
-  // }, []);
 
   const handleAddToy = event => {
     event.preventDefault();
 
-    // const form = event.target;
-    // const name =form.name.value;
-    // const email = user?.email;
-    // const adding = {
-    //   sellerName: name,
-    //   email,
-    //   date,
-    //   toy: _id,
-    //   price: price
-    // }
-    // console.log(adding);
+    const form = event.target;
+    const name =form.name.value;
+    const email = user?.email;
+    const adding = {
+      sellerName: name,
+      email,
+      // // toy: _id,
+      // price: price
+    }
+    console.log(adding);
   }
 
-  fetch('http://localhost:5000/toys/addingToy', {
+  // send data to server
+
+  fetch('http://localhost:5000/toys/addedToy', {
     method: 'POST',
     headers: {
       'content-type': 'application/json'
@@ -49,7 +44,7 @@ const AddAToy = () => {
   return (
     <div>
       <h2>Add a toy</h2>
-      {/* <h2>Add a toy{toys.length}</h2> */}
+      {/* <h2>Add a toy{toy_name}</h2> */}
             <form onSubmit={handleAddToy}>
             <div className="card-body">
               <div className="form-control">
