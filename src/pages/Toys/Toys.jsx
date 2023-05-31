@@ -11,7 +11,7 @@ const Toys = () => {
       .then((data) => setToys(data));
   }, []);
 
-  // const {_id} = toy;
+
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -37,7 +37,6 @@ const Toys = () => {
               <td className="py-2 px-4 border-b">{toy.price}</td>
               <td className="py-2 px-4 border-b">{toy.available_quantity}</td>
               <td className="py-2 px-4 border-b"><Link to={`/toy/${toy._id}`}><button className='bg-purple-200 rounded'>View Details</button></Link></td>
-              {/* <td className="py-2 px-4 border-b"><Link to={`/toy/:id`}><button className='bg-purple-200 rounded'>View Details</button></Link></td> */}
             </tr>
           ))}
         </tbody>

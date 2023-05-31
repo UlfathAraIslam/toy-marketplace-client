@@ -1,11 +1,9 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext} from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
 
 const AddAToy = () => {
-  const toy = useLoaderData();
 
-  // const {_id, toy_name} = toy;
 
   const {user} = useContext(AuthContext);
 
@@ -44,7 +42,6 @@ const AddAToy = () => {
   return (
     <div>
       <h2>Add a toy</h2>
-      {/* <h2>Add a toy{toy_name}</h2> */}
             <form onSubmit={handleAddToy}>
             <div className="card-body">
               <div className="form-control">
