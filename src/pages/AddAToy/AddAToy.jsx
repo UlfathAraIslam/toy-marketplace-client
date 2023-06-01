@@ -43,13 +43,13 @@ const AddAToy = () => {
       .then(data => {
         console.log(data);
         if (data.insertedId) {
-          // Swal.fire({
-          //   title: 'Success',
-          //   text: 'Toy added successfully!',
-          //   icon: 'success',
-          //   confirmButtonColor: '#3085d6',
-          //   confirmButtonText: 'OK'
-          // });
+          Swal.fire({
+            title: 'Success',
+            text: 'Toy added successfully!',
+            icon: 'success',
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: 'OK'
+          });
         }
       });
   };
