@@ -6,7 +6,7 @@ const Login = () => {
     const navigate = useNavigate();
     const [error, setError] = useState("");
 
-    const { signIn, signInWithGoogle, signInWithGitHub, user, loading } = useContext(AuthContext);
+    const { signIn, signInWithGoogle, user } = useContext(AuthContext);
 
     const location = useLocation();
     console.log('login page location');
