@@ -32,7 +32,7 @@ const AddAToy = () => {
 
     console.log(adding);
 
-    fetch('http://localhost:5000/toys/addedToy', {
+    fetch('https://b7a11-toy-marketplace-server-side-ulfath-ara-islam.vercel.app/toys/addedToy', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'

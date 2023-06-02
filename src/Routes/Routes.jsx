@@ -9,6 +9,7 @@ import Blog from "../pages/Blog/Blog";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import AddAToy from "../pages/AddAToy/AddAToy";
 import MyToy from "../pages/MyToy/MyToy";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -33,12 +34,12 @@ const router = createBrowserRouter([
         },
         {
             path: '/my-toys',
-            element: <MyToy></MyToy>
+            element: <PrivateRoute><MyToy></MyToy></PrivateRoute>
         },
         {
             path: '/toy/:id',
             element: <Toy></Toy>,
-            loader: ({params})=> fetch(`http://localhost:5000/toys/${params.id}`)
+            loader: ({params})=> fetch(`https://b7a11-toy-marketplace-server-side-ulfath-ara-islam.vercel.app/toys/${params.id}`)
         },
         {
             path: '/blog',
@@ -46,7 +47,7 @@ const router = createBrowserRouter([
         },
         {
             path: '/add-toy',
-            element: <AddAToy></AddAToy>,
+            element: <PrivateRoute><AddAToy></AddAToy>,</PrivateRoute>
             
         },
     ]

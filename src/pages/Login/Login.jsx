@@ -9,8 +9,10 @@ const Login = () => {
     const { signIn, signInWithGoogle, signInWithGitHub, user, loading } = useContext(AuthContext);
 
     const location = useLocation();
+    console.log('login page location');
 
-    const from = location.state?.from.pathname || '/';
+
+     const from = location.state?.from?.pathname || '/';
 
     useEffect(() => {
         if (user) {

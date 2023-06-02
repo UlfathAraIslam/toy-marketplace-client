@@ -17,8 +17,8 @@ const Toy = () => {
 
        <div>
        <h2 className="text-2xl font-bold mb-2">{toy_name}</h2>
-        <p className="text-gray-600 mb-2">Seller: {seller.name}</p>
-        <p className="text-gray-600 mb-2">Seller Email: {seller.email}</p>
+        <p className="text-gray-600 mb-2">Seller: {seller?.name}</p>
+        <p className="text-gray-600 mb-2">Seller Email: {seller?.email}</p>
         <p className="text-gray-600 mb-2">Price: ${price}</p>
         <p className="text-gray-600 mb-2">Rating: {rating}</p>
         <p className="text-gray-600 mb-2">Available Quantity: {available_quantity}</p>
